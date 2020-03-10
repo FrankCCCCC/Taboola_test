@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "taboolatest",
+            "dialect": "PostgreSQL",
+            "isActive": false,
+            "isConnected": false,
+            "name": "taboolatest",
+            "password": "taboola",
+            "port": 35432,
+            "server": "localhost",
+            "username": "postgres"
+        }
+    ]
+}
