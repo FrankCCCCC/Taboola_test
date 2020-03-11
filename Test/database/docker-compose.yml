@@ -1,23 +1,23 @@
 version: '3.1'
 services:
-  java-q1:
-    container_name: java-q1
-    build:
-      context: ./javaQ1
-    networks:
-      - def-network
+  # java-q1:
+  #   container_name: java-q1
+  #   build:
+  #     context: ./javaQ1
+  #   networks:
+  #     - def-network
 
-  java-q2:
-    container_name: java-q2
-    build:
-      context: ./javaQ2
-    networks:
-      - def-network
+  # java-q2:
+  #   container_name: java-q2
+  #   build:
+  #     context: ./javaQ2
+  #   networks:
+  #     - def-network
 
   postgres:
     container_name: database
     build: 
-      context: ./database
+      context: ./
     ports:
       - "35432:5432"
     environment:
@@ -28,6 +28,7 @@ services:
       - def-network
 
   adminer:
+    container_name: adminer
     image: adminer
     restart: always
     ports:
