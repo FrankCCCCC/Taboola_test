@@ -39,4 +39,4 @@ Or pull docker-compose image from Docker Hub with `docker pull shcsdocker/databa
 
 Then run the container with `docker run -it shcsdocker/database_full`
 
-The image contains `Database adminer` and `Postgres Database`. You can connect to ip of docker with port 8080 and query the data.
+The image contains `Database adminer` and `Postgres Database`. You can connect to ip of docker with port `8080` and query the data.
