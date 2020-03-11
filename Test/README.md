@@ -57,7 +57,7 @@ Then run the container with
 
 You can enter the database with 
 
-    docker exec -it database_full bash
+    docker exec -it database_full psql --host localhost -p 5432 TaboolaTest postgres
 
 # More
 For more information about my SQL and JAVA skills. Please see the following links:
