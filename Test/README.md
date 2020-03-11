@@ -22,3 +22,9 @@ Then run the container with `docker run -it java-q2`
 ## For Question 3
 
 Environment: Postgresql
+
+The code is under the folder `database`. You can run the sql file `q3.sql`.
+
+Or pull docker image from Docker Hub with `docker push shcsdocker/database`
+
+Then run the container with `docker run -it database`
