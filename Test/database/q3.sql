@@ -6,7 +6,8 @@ CREATE TABLE product_price_history(id SERIAL PRIMARY KEY NOT NULL,
                       is_current BOOLEAN NOT NULL,
                       price NUMERIC NOT NULL, 
                       start_date TIMESTAMP NOT NULL,
-                      end_date TIMESTAMP);
+                      end_date TIMESTAMP,
+                      CONSTRAINT is_valid_history CHECK ((is_current IS TRUE AND end_date IS NULL) OR (is_current IS FALSE AND start_date IS NOT NULL)));
 
 INSERT INTO products(name, catergory) VALUES ('Car', 'Transportation');
 INSERT INTO products(name, catergory) VALUES ('Polo Shirt', 'Shirts');
