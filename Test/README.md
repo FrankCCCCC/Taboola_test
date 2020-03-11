@@ -21,7 +21,15 @@ Then run the container with `docker run -it java-q2`
 
 ## For Question 3
 
-Environment: Postgresql
+Database: Postgresql
+
+Environment:
+
+> POSTGRES_DB TaboolaTest
+
+> POSTGRES_USER postgres
+
+> POSTGRES_PASSWORD taboola
 
 The code is under the folder `database`. You can run the sql file `q3.sql`.
 
