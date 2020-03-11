@@ -35,6 +35,8 @@ Environment:
 
 The code is under the folder `database`. You can run the sql file `q3.sql`.
 
-Or pull docker image from Docker Hub with `docker pull shcsdocker/database`
+Or pull docker-compose image from Docker Hub with `docker pull shcsdocker/database_full`
 
-Then run the container with `docker run -it database`
+Then run the container with `docker run -it shcsdocker/database_full`
+
+The image contains `Database adminer` and `Postgres Database`. You can connect to ip of docker with port 8080 and query the data.
