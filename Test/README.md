@@ -31,6 +31,8 @@ Environment:
 
 > POSTGRES_PASSWORD taboola
 
+> Expose Port 35432
+
 The code is under the folder `database`. You can run the sql file `q3.sql`.
 
 Or pull docker image from Docker Hub with `docker pull shcsdocker/database`
