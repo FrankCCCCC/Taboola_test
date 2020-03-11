@@ -1,13 +1,7 @@
 import java.util.Scanner;
 
 public class q1 {
-    public static void main(String args[]){
-        System.out.println("Please Enter an Integer");
-        Scanner keyboard = new Scanner(System.in);
-        String input = keyboard.nextLine();
-        System.out.println("Your Input From Keyboard: " + input);
-        keyboard.close();
-
+    public static int string2int(String input){
         int out = 0;
         int base = 1;
         for(int i=input.length()-1; i>=0; i--){
@@ -43,9 +37,19 @@ public class q1 {
                     out+=9 * base;
                     break;
             }
-
             base*=10;
         }
-        System.out.println(out);
+
+            
+        return out;
+    }
+    public static void main(String args[]){
+        System.out.println("Please Enter an Integer");
+        Scanner keyboard = new Scanner(System.in);
+        String input = keyboard.nextLine();
+        System.out.println("Your Input From Keyboard: " + input);
+        keyboard.close();
+
+        System.out.println(string2int(input));
     }
 }
