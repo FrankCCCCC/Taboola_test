@@ -49,15 +49,15 @@ The code is under the folder `database`. You can run the sql file `q3.sql`.
 
 Or pull docker-compose image from Docker Hub with 
 
-    docker pull shcsdocker/database_full
+    docker pull shcsdocker/database-full
 
 Then run the container with 
 
-    docker run -it --name database_full shcsdocker/database_full
+    docker run -it --name database-full shcsdocker/database-full
 
 You can enter the database with 
 
-    docker exec -it database_full psql --host localhost -p 5432 TaboolaTest postgres
+    docker exec -it database-full psql --host localhost -p 5432 TaboolaTest postgres
 
 # More
 For more information about my SQL and JAVA skills. Please see the following links:
