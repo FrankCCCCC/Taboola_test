@@ -1,4 +1,3 @@
--- CREATE DATABASE taboola_test;
 CREATE TABLE products(id SERIAL PRIMARY KEY NOT NULL, 
                       name TEXT NOT NULL, 
                       catergory TEXT NOT NULL);
@@ -20,5 +19,4 @@ INSERT INTO product_price_history(product_id, is_current, price, start_date, end
 
 SELECT id FROM products UNION SELECT id FROM product_price_history;
 SELECT id FROM products UNION SELECT product_id FROM product_price_history;
-
--- psql -h localhost -U postgres -d playdb -a -f D:\data_\Taboola\playdb_test Session.sql
+SELECT products.id, products.name, products.catergory, product_price_history.id, product_price_history.product_id, product_price_history.is_current, product_price_history.price, product_price_history.start_date, product_price_history.end_date FROM products INNER JOIN product_price_history ON products.id = product_price_history.product_id;
